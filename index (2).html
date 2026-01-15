@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My first creation</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    .card { max-width: 700px; border: 1px solid #ddd; border-radius: 12px; padding: 16px; }
+    button { padding: 10px 12px; border: 0; border-radius: 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello! This is my first mini-site 👋</h1>
+    <p>My name is: <strong>Sanzharr</strong></p>
+
+    <h2>What I love</h2>
+    <ul>
+      <li>Games</li>
+      <li>Music</li>
+      <li>tv girl</li>
+    </ul>
+
+    <button id="btn">Нажми меня!!!</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const result = document.getElementById('result');
+
+    btn.addEventListener('click', () => {
+      result.textContent = 'its working! Молодец!  🎉';
+    });
+  </script>
+</body>
+</html>
